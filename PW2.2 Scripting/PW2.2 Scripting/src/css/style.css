@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Monocraft';
+    src: local('Monocraft'), url('../assets/Monocraft.ttc') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Monocraft', monospace;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    border: 2px solid #333;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+}
+
+h1,h2 {
+    margin: 8px 0;
+}
+
+#statusDisplay p {
+    margin: 4px 0;
+}
+
+#gameCanvas {
+    border: 3px solid #16c79a;
+    background: #0a0e27;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 0 20px rgba(22, 199, 154, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+#game {
+    margin: 20px 0;
+}
+
+/* simpele button styling */
+.movement-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.movement-row {
+    display: flex;
+    gap: 10px;
+}
+
+.move-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+.sensor-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.sensor-btn {
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 4px;
+    font-family: 'Monocraft', monospace;
+    font-size: 14px;
+}
+
+.sensor-btn.active {
+    background: #f39c12;
+}
+
+#sleepBtn {
+    padding: 12px 24px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 4px;
+    font-family: 'Monocraft', monospace;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.control-group {
+    margin: 20px 0;
+}
+
+.control-group h3 {
+    margin: 10px 0;
+}

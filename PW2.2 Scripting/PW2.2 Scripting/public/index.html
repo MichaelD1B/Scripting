@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scripting Node-JS Server</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <h1>Scripting Node-JS Server</h1>
+
+  <section id="game">
+    <h2>Visual</h2>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+  </section>
+
+  <section id="controls">
+    <h2>Control</h2>
+    
+    <div class="control-group">
+      <h3>Movement (wasd)</h3>
+      <div class="movement-grid">
+        <div class="movement-row">
+          <button class="move-btn" data-direction="forward">↑</button>
+        </div>
+        <div class="movement-row">
+          <button class="move-btn" data-direction="left">←</button>
+          <button class="move-btn" data-direction="backward">↓</button>
+          <button class="move-btn" data-direction="right">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <h3>Sensors</h3>
+      <div class="sensor-buttons">
+        <button class="sensor-btn active" data-sensor="Temperature">Temperature</button>
+        <button class="sensor-btn active" data-sensor="Camera">Camera</button>
+        <button class="sensor-btn" data-sensor="Pressure">Pressure</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <h3>Power</h3>
+      <button id="sleepBtn">💤 Sleep (space)</button>
+    </div>
+  </section>
+
+  <script src="/src/js/game.js"></script>
+  <script src="/src/js/main.js"></script>
+</body>
+</html>
